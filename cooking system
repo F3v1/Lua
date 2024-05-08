@@ -1,0 +1,7 @@
+Zutaten = { "g Mehl", "g Zucker", "g Backpulver", " Eier", "ml Milch"}
+Personen = 5
+Anzahl = {200*Personen, 2*Personen, 1*Personen, 5*Personen, 200*Personen}
+
+for i, value in pairs(Zutaten) do
+    print(i.. ".Du Benötigst " ..Anzahl[i] ..value)
+end
