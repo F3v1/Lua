@@ -1,5 +1,5 @@
 Rezept = "Crêpe" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe--
-Personen = 5 --Hier die Anzahl an Personen eintragen--
+Personen = 1 --Hier die Anzahl an Personen eintragen--
 
 if Rezept=="Pfannkuchen" then
     Zutaten = {" Ei/er",
@@ -129,7 +129,8 @@ if Rezept=="Waffeln" then
     print("Mehl, Backpulver und Salz miteinander vermischen und zum Teig rühren.")
     print("Jetzt die Milch langsam unterrühren.Dann das Waffeleisen vorheitzen.")
     print("Danach pro Waffel 2 gehäufte Esslöffel Teig auf das Waffeleisen geben.")
-    print("Zuletzt jede Waffel 1-2 Minuten goldbraun backen. Dann ist die Waffel Fertig.")
+    print("Zuletzt jede Waffel 1-2 Minuten goldbraun backen.")
+    print("Dann ist die Waffel endlich fertig.")
 end
     
 if Rezept=="Pfannkuchen" then
@@ -139,5 +140,16 @@ if Rezept=="Pfannkuchen" then
     print("Danach mit einer Schöpfkelle eine Kelle Teig in die Pfanne geben.")
     print("Dazu die Pfanne kurz in jede Richtung schwenken um den Teig zu verteilen.")
     print("Zuletzt den Pfannkuchen von beiden Seiten 1-2 Minuten bräunlich ausbacken.")
-    print("Dann ist der Pfannkuchen fertig.")
+    print("Dann ist der Pfannkuchen endlich fertig.")
+end
+
+if Rezept=="Crepe" or Rezept=="Crêpe" then
+    print("Als erstes Mehl mit Zucker und Salz vermischen.")
+    print("Danach Eier und Milch hinzufügen.")
+    print("Dann alles mit einem Schneebesen oder dem Handrührgerät zu einem glatten Teig verrühren.")
+    print("Danach den Crêpe-Maker auf mittlerer bis hoher Stufe erhitzen und mit etwas Butter bestreichen.")
+    print("Anschließend eine Kelle Teig auf die Mitte der heißen Platte gießen.")
+    print("Direkt danach mit dem Crêpe-Schaber in kreisenden Bewegungen über zwei Drittel der Platte verteilen.")
+    print("Nach 30-60 Sekunden den Crêpe einmal wenden und wieder 30-60 Sekunden warten.")
+    print("Dann ist der Crêpe endlich fertig.")
 end
