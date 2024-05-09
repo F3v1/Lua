@@ -1,24 +1,26 @@
-Rezept = "Waffeln" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen
-Personen = 1 --Hier die Anzahl an Personen eintragen
+Rezept = "Crêpe" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe--
+Personen = 5 --Hier die Anzahl an Personen eintragen--
 
-if Rezept =="Pfannkuchen" then
-    Zutaten = { "g Mehl",
-        "Prise/n Zucker",
-        " Eier",
+if Rezept=="Pfannkuchen" then
+    Zutaten = {" Ei/er",
         "ml Milch",
+        "Prise/n Zucker",
         "Prise/n Salz",
-        "ml Mineralwasser"}
-    Anzahl = {200*Personen, 
-    1*Personen, 
-    2*Personen, 
-    200*Personen,
-    1*Personen,
-    60*Personen}
-elseif Rezept =="Waffeln" then
+        "g Mehl",
+        "ml Mineralwasser",
+        "Speiseöl"}
+    Anzahl = {2*Personen,
+        200*Personen,
+        1*Personen,
+        1*Personen,
+        200*Personen,
+        60*Personen,
+        ""}
+elseif Rezept=="Waffeln" then
     Zutaten = { "g Mehl",
         "g Zucker",
         "Tl. Backpulver",
-        " Eier", "ml Milch",
+        " Ei/er", "ml Milch",
         "Priese/n Salz",
         "Pck. Vanillezucker",
         "g Butter"}
@@ -30,6 +32,17 @@ elseif Rezept =="Waffeln" then
         1*Personen,
         1*Personen,
         125*Personen}
+elseif Rezept=="Crepe" or Rezept=="Crêpe" then
+    Zutaten = {"g mehl",
+        "ml Milch",
+        " Ei/er",
+        "g Butter",
+        "Pck. Vanillezucker"}
+    Anzahl = {50*Personen,
+        100*Personen,
+        1*Personen,
+        10*Personen,
+        0.2*Personen}
 end
 if Rezept=="Waffeln" then
     if Personen<9 and Personen>1 then
@@ -75,7 +88,56 @@ if Rezept=="Pfannkuchen" then
     end
 end
 
+if Rezept=="Crepe" or Rezept=="Crêpe" then
+    if Personen<9 and Personen>1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------")
+    elseif Personen == 1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Person:")
+    print("-------------------------------")
+    elseif Personen<1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------")
+    elseif Personen<99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------")
+    elseif Personen>99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-----------------------------------")
+    elseif Personen==99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------")
+    end
+end
+
 print("Du Benötigst:")
 for i, value in pairs(Zutaten) do
     print(i.. ". " ..Anzahl[i] ..value)
+end
+
+--------------------------------------------------------------------------------------------------
+------------------------------------------Anleitung-----------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+print("")
+print("")
+print("-------------Anleitung-------------")
+print("")
+
+if Rezept=="Waffeln" then
+    print("Butter mit Zucker und Vanillezucker verrühren. Eier nach und nach unterrühren.")
+    print("Mehl, Backpulver und Salz miteinander vermischen und zum Teig rühren.")
+    print("Jetzt die Milch langsam unterrühren.Dann das Waffeleisen vorheitzen.")
+    print("Danach pro Waffel 2 gehäufte Esslöffel Teig auf das Waffeleisen geben.")
+    print("Zuletzt jede Waffel 1-2 Minuten goldbraun backen. Dann ist die Waffel Fertig.")
+end
+    
+if Rezept=="Pfannkuchen" then
+    print("Eier mit Milch, Zucker, Salz, Mehl und Mineralwasser zu einem glatten Teig rühren.")
+    print("Bei Bedarf noch etwas Mehl oder Wasser hinzugeben, um die gewünschte Konsistenz zu erreichen.")
+    print("Eine beschichtete Pfanne mit etwas Speiseöl erhitzen.")
+    print("Danach mit einer Schöpfkelle eine Kelle Teig in die Pfanne geben.")
+    print("Dazu die Pfanne kurz in jede Richtung schwenken um den Teig zu verteilen.")
+    print("Zuletzt den Pfannkuchen von beiden Seiten 1-2 Minuten bräunlich ausbacken.")
+    print("Dann ist der Pfannkuchen fertig.")
 end
