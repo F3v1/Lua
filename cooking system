@@ -1,7 +1,81 @@
-Zutaten = { "g Mehl", "g Zucker", "g Backpulver", " Eier", "ml Milch"}
-Personen = 5
-Anzahl = {200*Personen, 2*Personen, 1*Personen, 5*Personen, 200*Personen}
+Rezept = "Waffeln" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen
+Personen = 1 --Hier die Anzahl an Personen eintragen
 
+if Rezept =="Pfannkuchen" then
+    Zutaten = { "g Mehl",
+        "Prise/n Zucker",
+        " Eier",
+        "ml Milch",
+        "Prise/n Salz",
+        "ml Mineralwasser"}
+    Anzahl = {200*Personen, 
+    1*Personen, 
+    2*Personen, 
+    200*Personen,
+    1*Personen,
+    60*Personen}
+elseif Rezept =="Waffeln" then
+    Zutaten = { "g Mehl",
+        "g Zucker",
+        "Tl. Backpulver",
+        " Eier", "ml Milch",
+        "Priese/n Salz",
+        "Pck. Vanillezucker",
+        "g Butter"}
+    Anzahl = {250*Personen,
+        100*Personen,
+        1*Personen,
+        3*Personen,
+        200*Personen,
+        1*Personen,
+        1*Personen,
+        125*Personen}
+end
+if Rezept=="Waffeln" then
+    if Personen<9 and Personen>1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-----------------------------------")
+    elseif Personen == 1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Person:")
+    print("---------------------------------")
+    elseif Personen<1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-----------------------------------")
+    elseif Personen<99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("------------------------------------")
+    elseif Personen>99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-------------------------------------")
+    elseif Personen==99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("------------------------------------")
+    end
+end
+
+if Rezept=="Pfannkuchen" then
+    if Personen<9 and Personen>1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------------")
+    elseif Personen == 1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Person:")
+    print("-------------------------------------")
+    elseif Personen<1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------------")
+    elseif Personen<99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------------")
+    elseif Personen>99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-----------------------------------------")
+    elseif Personen==99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------------")
+    end
+end
+
+print("Du Benötigst:")
 for i, value in pairs(Zutaten) do
-    print(i.. ".Du Benötigst " ..Anzahl[i] ..value)
+    print(i.. ". " ..Anzahl[i] ..value)
 end
