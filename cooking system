@@ -1,4 +1,4 @@
-Rezept = "Crêpe" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe--
+Rezept = "Cookies" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe, Cookies
 Personen = 1 --Hier die Anzahl an Personen eintragen--
 
 if Rezept=="Pfannkuchen" then
@@ -17,11 +17,11 @@ if Rezept=="Pfannkuchen" then
         60*Personen,
         ""}
 elseif Rezept=="Waffeln" then
-    Zutaten = { "g Mehl",
+    Zutaten = {"g Mehl",
         "g Zucker",
         "Tl. Backpulver",
         " Ei/er", "ml Milch",
-        "Priese/n Salz",
+        "Prise/n Salz",
         "Pck. Vanillezucker",
         "g Butter"}
     Anzahl = {250*Personen,
@@ -43,7 +43,26 @@ elseif Rezept=="Crepe" or Rezept=="Crêpe" then
         1*Personen,
         10*Personen,
         0.2*Personen}
+elseif Rezept=="Cookies" then
+    Zutaten = {"g Butter",
+        "g Zucker",
+        "g brauner Zucker",
+        "Tl. Vanilleextrakt",
+        " Ei/er", "g Mehl",
+        "Tl. Backpulver",
+        "Prise/n Salz",
+        "g Chocolate Chunks"}
+    Anzahl = {250*Personen,
+        100*Personen,
+        150*Personen,
+        1*Personen,
+        2*Personen,
+        360*Personen,
+        1*Personen,
+        1*Personen,
+        200*Personen}
 end
+
 if Rezept=="Waffeln" then
     if Personen<9 and Personen>1 then
     print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
@@ -107,7 +126,7 @@ if Rezept=="Crepe" or Rezept=="Crêpe" then
     elseif Personen==99 then
     print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
     print("----------------------------------")
-    end
+    end             -------------------------------Hier Weitermachen------------------------------
 end
 
 print("Du Benötigst:")
