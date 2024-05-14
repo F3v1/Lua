@@ -1,0 +1,28 @@
+Zahl1 = 3
+Zahl2 = 3
+Zeichen = "^"
+
+if Zeichen=="+" then
+    Antwort = Zahl1+Zahl2
+    print("Das Ergebnis ist "..Antwort)
+end
+
+if Zeichen=="*" then
+    Antwort = Zahl1*Zahl2
+    print("Das Ergebnis ist "..Antwort)
+end
+
+if Zeichen=="-" then
+    Antwort = Zahl1-Zahl2
+    print("Das Ergebnis ist "..Antwort)
+end
+
+if Zeichen=="/" then
+    Antwort = Zahl1/Zahl2
+    print("Das Ergebnis ist "..Antwort)
+end
+
+if Zeichen=="^" then
+    Antwort = Zahl1^Zahl2
+    print("Das Ergebnis ist "..Antwort)
+end
