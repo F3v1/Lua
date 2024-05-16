@@ -3,7 +3,6 @@ Number2 = 3
 symbol = "+"  --Put the symbol you want to use here-> If you use sqrt it only use Number1--
               --The list of symbols: +, -, *, /, ^, sqrt
 
-
 print("------------------------------------------------------")
 print("------------------Calculator by F3v1------------------")
 print("------------------------------------------------------")
@@ -50,3 +49,7 @@ if symbol=="sqrt" then
     print("↓↓↓")
     print("The answer is "..Answer.."!")
 end
+
+io.write("Enter Number1: ")
+User_input = io.read()
+print(User_input)
