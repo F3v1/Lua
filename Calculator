@@ -1,117 +1,66 @@
-print("------------------------------------------------------")
-print("------------------Calculator by F3v1------------------")
-print("------------------------------------------------------")
-print("")
+Restart = "Y"
 
-io.write("Enter Number1: ")
-Number1 = io.read()
-io.write("Enter Number2: ")
-Number2 = io.read()
-io.write("Enter Operator: ")
-Operator = io.read()
-print("")
-
-if Operator=="+" then
-    Answer = Number1+Number2
-    print("You added "..Number1.." to "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="*" then
-    Answer = Number1*Number2
-    print("You multiplied "..Number1.." to "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="-" then
-    Answer = Number1-Number2
-    print("You subtracted "..Number1.." with "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="/" then
-    Answer = Number1/Number2
-    print("You divided "..Number1.." by "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="^" then
-    Answer = Number1^Number2
-    print("You took "..Number1.." to the power of "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="sqrt" then
-    Answer = math.sqrt(Number1)
-    print("You took the root of "..Number1.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-print("")
-
-io.write("Restart? (Y/N) ")
-Restart = io.read()
-
-if Restart=="Y" then
+while Restart=="Y" do
+    print("------------------------------------------------------")
+    print("------------------Calculator by F3v1------------------")
+    print("------------------------------------------------------")
+    print("")
+    
     io.write("Enter Number1: ")
-Number1 = io.read()
-io.write("Enter Number2: ")
-Number2 = io.read()
-io.write("Enter Operator: ")
-Operator = io.read()
-
-if Operator=="+" then
-    Answer = Number1+Number2
-    print("You added "..Number1.." to "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="*" then
-    Answer = Number1*Number2
-    print("You multiplied "..Number1.." to "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="-" then
-    Answer = Number1-Number2
-    print("You subtracted "..Number1.." with "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="/" then
-    Answer = Number1/Number2
-    print("You divided "..Number1.." by "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="^" then
-    Answer = Number1^Number2
-    print("You took "..Number1.." to the power of "..Number2.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-
-if Operator=="sqrt" then
-    Answer = math.sqrt(Number1)
-    print("You took the root of "..Number1.."!")
-    print("↓↓↓")
-    print("The answer is "..Answer.."!")
-end
-print("")
-io.write("Restart? (Y/N) ")
-Restart = io.read()
+    Number1 = io.read()
+    io.write("Enter Number2: ")
+    Number2 = io.read()
+    io.write("Enter Operator: ")
+    Operator = io.read()
+    print("")
+    
+    if Operator=="+" then
+        Answer = Number1+Number2
+        print("You added "..Number1.." to "..Number2.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    
+    if Operator=="*" then
+        Answer = Number1*Number2
+        print("You multiplied "..Number1.." to "..Number2.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    
+    if Operator=="-" then
+        Answer = Number1-Number2
+        print("You subtracted "..Number1.." with "..Number2.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    
+    if Operator=="/" then
+        Answer = Number1/Number2
+        print("You divided "..Number1.." by "..Number2.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    
+    if Operator=="^" then
+        Answer = Number1^Number2
+        print("You took "..Number1.." to the power of "..Number2.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    
+    if Operator=="sqrt" then
+        Answer = math.sqrt(Number1)
+        print("You took the root of "..Number1.."!")
+        print("↓↓↓")
+        print("The answer is "..Answer.."!")
+    end
+    print("")
+    
+    io.write("Restart? (Y/N) ")
+    Restart = io.read()
 end
 
 if Restart=="N" then
-    print("")
     print("The programm is over!")
 end
