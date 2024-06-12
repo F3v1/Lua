@@ -1,4 +1,4 @@
-Rezept = "Cookies" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe, Cookies
+Rezept = "Cookies" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe, Cookies/American Cookies
 Personen = 1 --Hier die Anzahl an Personen eintragen--
 
 --------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ elseif Rezept=="Crepe" or Rezept=="Crêpe" then
         4*Personen,
         50*Personen,
         1*Personen}
-elseif Rezept=="Cookies" then
+elseif Rezept=="Cookies" or Rezept=="American Cookies" then
     Zutaten = {"g Butter",
         "g Zucker",
         "g brauner Zucker",
@@ -133,7 +133,7 @@ if Rezept=="Crepe" or Rezept=="Crêpe" then
     end
 end
 
-if Rezept=="Cookies" then
+if Rezept=="Cookies" or Rezept=="American Cookies" then
     if Personen<9 and Personen>1 then
     print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
     print("---------------------------------")
@@ -199,9 +199,14 @@ if Rezept=="Crepe" or Rezept=="Crêpe" then
     print("Dann ist der Crêpe endlich fertig.")
 end
 
-if Rezept=="Cookies" then
+if Rezept=="Cookies" or Rezept=="American Cookies" then
     print("Zuerst die Butter mit den beiden Zuckersorten mehrere Minuten cremig schlagen.")
     print("Danach Vanilleextrakt und Eier zugeben und kurz verrühren.")
     print("Anschließend Mehl, Backpulver und Salz mischen,")
     print("zur Eier-Butter-Mischung geben und zu einem Teig verrühren.")
+    print("Ca. 180 g der Schokochunks mithilfe eines Kochlöffels ")
+    print("oder Teigspatels unter den Teig heben.")
+    print("Dann den Ofen auf 180 Grad Ober-/Unterhitze vorheizen.")
+    print("Danach zwei Backbleche mit Backpapier auslegen.")
+    print("Dann sind die Cookies endlich fertig.")
 end
