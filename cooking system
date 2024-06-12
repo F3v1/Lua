@@ -1,6 +1,10 @@
 Rezept = "Cookies" --Hier ein Rezept aussuchen: Waffeln, Pfannkuchen, Crêpe/Crepe, Cookies
 Personen = 1 --Hier die Anzahl an Personen eintragen--
 
+--------------------------------------------------------------------------------------------------
+-------------------------------------------Rezepte------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
 if Rezept=="Pfannkuchen" then
     Zutaten = {" Ei/er",
         "ml Milch",
@@ -38,11 +42,11 @@ elseif Rezept=="Crepe" or Rezept=="Crêpe" then
         " Ei/er",
         "g Butter",
         "Pck. Vanillezucker"}
-    Anzahl = {50*Personen,
-        100*Personen,
-        1*Personen,
-        10*Personen,
-        0.2*Personen}
+    Anzahl = {250*Personen,
+        500*Personen,
+        4*Personen,
+        50*Personen,
+        1*Personen}
 elseif Rezept=="Cookies" then
     Zutaten = {"g Butter",
         "g Zucker",
@@ -126,7 +130,29 @@ if Rezept=="Crepe" or Rezept=="Crêpe" then
     elseif Personen==99 then
     print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
     print("----------------------------------")
-    end             -------------------------------Hier Weitermachen------------------------------
+    end
+end
+
+if Rezept=="Cookies" then
+    if Personen<9 and Personen>1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------")
+    elseif Personen == 1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Person:")
+    print("-------------------------------")
+    elseif Personen<1 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("---------------------------------")
+    elseif Personen<99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------")
+    elseif Personen>99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("-----------------------------------")
+    elseif Personen==99 then
+    print("Zutaten für "..Rezept..(" für ")..Personen.." Personen:")
+    print("----------------------------------")
+    end
 end
 
 print("Du Benötigst:")
@@ -171,4 +197,11 @@ if Rezept=="Crepe" or Rezept=="Crêpe" then
     print("Direkt danach mit dem Crêpe-Schaber in kreisenden Bewegungen über zwei Drittel der Platte verteilen.")
     print("Nach 30-60 Sekunden den Crêpe einmal wenden und wieder 30-60 Sekunden warten.")
     print("Dann ist der Crêpe endlich fertig.")
+end
+
+if Rezept=="Cookies" then
+    print("Zuerst die Butter mit den beiden Zuckersorten mehrere Minuten cremig schlagen.")
+    print("Danach Vanilleextrakt und Eier zugeben und kurz verrühren.")
+    print("Anschließend Mehl, Backpulver und Salz mischen,")
+    print("zur Eier-Butter-Mischung geben und zu einem Teig verrühren.")
 end
