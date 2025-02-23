@@ -12,8 +12,11 @@
    
 > [!Important]
 > Install LuaFileSystem (LFS) if you don’t have it: *luarocks install luafilesystem*
+> 
 > Run the code.
+> 
 > Enter the source directory.
+> 
 > Enter the backup directory.
 
 > [!IMPORTANT]
