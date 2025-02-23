@@ -1,3 +1,7 @@
+print("------------------------------------------------------")
+print("------------------Calculator by F3v1------------------")
+print("------------------------------------------------------")
+
 local lfs = require("lfs")
 
 local function directoryExists(path)
