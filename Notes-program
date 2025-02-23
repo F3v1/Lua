@@ -1,0 +1,66 @@
+-- Notizen-App in Lua (Konsole)
+
+local notes = {}
+
+local function showMenu()
+    print("\nNotizen-App")
+    print("1. Notiz hinzufügen")
+    print("2. Alle Notizen anzeigen")
+    print("3. Notiz löschen")
+    print("4. Beenden")
+    io.write("Wähle eine Option: ")
+end
+
+local function addNote()
+    io.write("Gib deine Notiz ein: ")
+    local note = io.read()
+    if note and note ~= "" then
+        table.insert(notes, note)
+        print("Notiz hinzugefügt!")
+    else
+        print("Leere Notiz wurde nicht hinzugefügt.")
+    end
+end
+
+local function listNotes()
+    if #notes == 0 then
+        print("Keine Notizen vorhanden.")
+    else
+        print("\nDeine Notizen:")
+        for i, note in ipairs(notes) do
+            print(i .. ". " .. note)
+        end
+    end
+end
+
+local function deleteNote()
+    listNotes()
+    if #notes == 0 then return end
+    io.write("Gib die Nummer der zu löschenden Notiz ein: ")
+    local input = io.read()
+    local index = tonumber(input)
+    if index and index >= 1 and index <= #notes then
+        table.remove(notes, index)
+        print("Notiz gelöscht!")
+    else
+        print("Ungültige Nummer.")
+    end
+end
+
+local running = true
+while running do
+    showMenu()
+    local choice = io.read()
+    if choice == "1" then
+        addNote()
+    elseif choice == "2" then
+        listNotes()
+    elseif choice == "3" then
+        deleteNote()
+    elseif choice == "4" then
+        running = false
+        print("Beende die Notizen-App. Auf Wiedersehen!")
+    else
+        print("Ungültige Auswahl, bitte versuche es erneut.")
+    end
+end
