@@ -14,7 +14,7 @@
 ## Why These Projects?
 These projects are simple, yet fun applications that showcase the power and simplicity of Lua scripting. They provide:
 - A basic **Calculator** for performing essential mathematical operations.
-- An engaging **Rock, Paper, Scissors** game to enjoy some casual fun while learning.
+- An engaging **Rock, Paper, Scissors** game to play if you are bored.
 
 ## Our Mission
 The goal of these projects is to demonstrate basic Lua scripting and logic, while also giving you the opportunity to test and modify code. Lua’s simplicity and ease of use make it ideal for beginners.
