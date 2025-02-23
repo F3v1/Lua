@@ -9,8 +9,8 @@
 2. **Rock, paper, scissors** – A game to play against the computer.
 3. **Notes-program** - A simple program to take notes.
 4. **Backup-system** - A simple backup system.
-   
->How to use backup-system
+
+**How to use backup-system**
 - Install LuaFileSystem (LFS) if you don’t have it: ***luarocks install luafilesystem***
 - Run the code.
 - Enter the source directory.
