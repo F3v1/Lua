@@ -2,12 +2,19 @@
 
 ## MADE BY F3V1 ##
 
-# Lua Projects: Calculator & Rock, Paper, Scissors & Notes-program
+# Lua Projects
 
-**Lua project** is a collection of three interactive programs written in Lua:  
+**Lua project** is a collection of four interactive programs written in Lua:  
 1. **Calculator** – A basic calculator.
-2. **Rock, Paper, Scissors** – A game to play against the computer.
+2. **Rock, paper, scissors** – A game to play against the computer.
 3. **Notes-program** - A simple program to take notes.
+4. **Backup-system** - A simple backup system.
+   
+> [!How to use backup-system]
+> 1. Install LuaFileSystem (LFS) if you don’t have it: *luarocks install luafilesystem*
+> 2. Run the code.
+> 3. Enter the source directory.
+> 4. Enter the backup directory.
 
 > [!IMPORTANT]
 > **Note:** These projects are built using Lua, a simple, fast, and lightweight scripting language. They are fun examples of interactive programs that you can run directly in your Lua environment.
