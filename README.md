@@ -1,21 +1,19 @@
-<div style="position: relative; text-align: center; color: white;">
-  <img src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="opacity: 0.3; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  <h1 style="position: relative;">MADE BY F3V1</h1>
-  <h2 style="position: relative;">Lua Projects: Calculator & Rock, Paper, Scissors</h2>
-</div>
+![Header](https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
-## Lua Projects
+## MADE BY F3V1 ##
+
+# Lua Projects: Calculator & Rock, Paper, Scissors
 
 **Lua Projects** is a collection of two interactive games written in Lua:  
-1. **Calculator** – A basic calculator to perform arithmetic operations.  
-2. **Rock, Paper, Scissors** – A fun game to play against the computer.  
+1. **Calculator** – A basic calculator to perform arithmetic operations.
+2. **Rock, Paper, Scissors** – A fun game to play against the computer.
 
-> **Important:**  
-> These projects are built using Lua, a simple, fast, and lightweight scripting language. They are fun examples of interactive programs that you can run directly in your Lua environment.
+> [!IMPORTANT]
+> **Note:** These projects are built using Lua, a simple, fast, and lightweight scripting language. They are fun examples of interactive programs that you can run directly in your Lua environment.
 
 ## Why These Projects?
-These projects are simple, yet fun applications that showcase the power and simplicity of Lua scripting. They provide:  
-- A basic **Calculator** for performing essential mathematical operations.  
+These projects are simple, yet fun applications that showcase the power and simplicity of Lua scripting. They provide:
+- A basic **Calculator** for performing essential mathematical operations.
 - An engaging **Rock, Paper, Scissors** game to enjoy some casual fun while learning.
 
 ## Our Mission
