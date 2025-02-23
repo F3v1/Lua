@@ -16,8 +16,7 @@
 > Enter the source directory.
 > Enter the backup directory.
 
-> [!IMPORTANT]
-> **Note:** These projects are built using Lua, a simple, fast, and lightweight scripting language. They are fun examples of interactive programs that you can run directly in your Lua environment.
+
 
 ## Our Mission
 The goal of these projects is to demonstrate basic Lua scripting and logic, while also giving you the opportunity to test and modify code. Lua’s simplicity and ease of use make it ideal for beginners.
