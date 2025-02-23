@@ -1,10 +1,10 @@
-<div align="center">
-  <img src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
+<div style="position: relative; text-align: center; color: white;">
+  <img src="https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" style="opacity: 0.3; position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  <h1 style="position: relative;">MADE BY F3V1</h1>
+  <h2 style="position: relative;">Lua Projects: Calculator & Rock, Paper, Scissors</h2>
 </div>
 
-# MADE BY F3V1
-
-# Lua Projects: Calculator & Rock, Paper, Scissors
+## Lua Projects
 
 **Lua Projects** is a collection of two interactive games written in Lua:  
 1. **Calculator** – A basic calculator to perform arithmetic operations.  
