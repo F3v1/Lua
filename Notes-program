@@ -1,32 +1,32 @@
--- Notizen-App in Lua (Konsole)
+-- Notes App in Lua (Console)
 
 local notes = {}
 
 local function showMenu()
-    print("\nNotizen-App")
-    print("1. Notiz hinzufügen")
-    print("2. Alle Notizen anzeigen")
-    print("3. Notiz löschen")
-    print("4. Beenden")
-    io.write("Wähle eine Option: ")
+    print("\nNotes App")
+    print("1. Add a Note")
+    print("2. Show All Notes")
+    print("3. Delete a Note")
+    print("4. Exit")
+    io.write("Choose an option: ")
 end
 
 local function addNote()
-    io.write("Gib deine Notiz ein: ")
+    io.write("Enter your note: ")
     local note = io.read()
     if note and note ~= "" then
         table.insert(notes, note)
-        print("Notiz hinzugefügt!")
+        print("Note added successfully!")
     else
-        print("Leere Notiz wurde nicht hinzugefügt.")
+        print("Empty note was not added.")
     end
 end
 
 local function listNotes()
     if #notes == 0 then
-        print("Keine Notizen vorhanden.")
+        print("No notes available.")
     else
-        print("\nDeine Notizen:")
+        print("\nYour Notes:")
         for i, note in ipairs(notes) do
             print(i .. ". " .. note)
         end
@@ -36,14 +36,14 @@ end
 local function deleteNote()
     listNotes()
     if #notes == 0 then return end
-    io.write("Gib die Nummer der zu löschenden Notiz ein: ")
+    io.write("Enter the number of the note to delete: ")
     local input = io.read()
     local index = tonumber(input)
     if index and index >= 1 and index <= #notes then
         table.remove(notes, index)
-        print("Notiz gelöscht!")
+        print("Note deleted successfully!")
     else
-        print("Ungültige Nummer.")
+        print("Invalid number.")
     end
 end
 
@@ -59,8 +59,8 @@ while running do
         deleteNote()
     elseif choice == "4" then
         running = false
-        print("Beende die Notizen-App. Auf Wiedersehen!")
+        print("Exiting Notes App. Goodbye!")
     else
-        print("Ungültige Auswahl, bitte versuche es erneut.")
+        print("Invalid choice, please try again.")
     end
 end
