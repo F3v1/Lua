@@ -1,6 +1,5 @@
 local lfs = require("lfs")
 
--- Function to check if a directory exists
 local function directoryExists(path)
     local attr = lfs.attributes(path)
     return attr and attr.mode == "directory"
