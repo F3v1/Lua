@@ -10,7 +10,7 @@
 3. **Notes-program** - A simple program to take notes.
 4. **Backup-system** - A simple backup system.
    
-> [!How to use backup-system]
+> How to use backup-system
 > 1. Install LuaFileSystem (LFS) if you don’t have it: *luarocks install luafilesystem*
 > 
 > 2. Run the code.
